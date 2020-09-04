@@ -2,13 +2,11 @@
 layout: post
 title: 융합 프로그래밍1 중간고사
 comments: true
-categories : [대학 공부 : 2020년도 2학기]
+categories: [대학 공부: 2020년도 2학기]
 tags: [java]
 ---
 
 # 20-09-01 (1)
-
-# 수업중
 
 #### # 다음시간에 프로그래밍 환경 잡을 것
 
@@ -62,25 +60,27 @@ JDK에 포함된 클래스 라이브러리 (주요한 기능들을 미리 구현
 
 [설치](http://www.eclipse.org/downloads/)
 
-# 개인 복습
-
----
+# 20-09-03 (2)
 
 # New - Java Project 만들기
+
 1. Create module-info.java file 체크 해제
-![](2020-09-03-15-19-54.png)
+   ![](2020-09-03-15-19-54.png)
 2. New - class 생성
 3. public static void main(String[] args) 체크
    ![](2020-09-03-15-26-12.png)
 
 # hello world 출력
+
 1. syso + ctrl + 스페이스바
+
 ```java
 System.out.println("");
 ```
 
 2. hello world 출력
    - Ctrl + F11 : Run
+
 ```java
 public class test1 {
 
