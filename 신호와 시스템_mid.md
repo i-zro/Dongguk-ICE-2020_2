@@ -14,4 +14,7 @@
 
 ### 수업 계획서
 
-# 개인 복습
+# 20-09-07
+![신시200907_200907_143821_2](https://user-images.githubusercontent.com/48379869/92352388-efa07180-f118-11ea-85b9-d0073eb732f4.jpg)
+![신시200907_200907_143821_3](https://user-images.githubusercontent.com/48379869/92352392-f16a3500-f118-11ea-8fdf-21ca1bac42d1.jpg)
+![신시200907_200907_143821_4](https://user-images.githubusercontent.com/48379869/92352409-fdee8d80-f118-11ea-8686-67e90dfb30cf.jpg)
