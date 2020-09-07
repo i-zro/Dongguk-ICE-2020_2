@@ -1,11 +1,3 @@
----
-layout: post
-title: 융합 프로그래밍1 중간고사
-comments: true
-categories: [대학 공부: 2020년도 2학기]
-tags: [java]
----
-
 # 20-09-01 (1)
 
 #### # 다음시간에 프로그래밍 환경 잡을 것
@@ -91,3 +83,5 @@ public class test1 {
 
 }
 ```
+
+# 20-09-01 (1)
