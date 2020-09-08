@@ -87,14 +87,17 @@ public class test1 {
 # 20-09-08 (3)
 
 ### 식별자
+
 클래스, 변수, 상수, 메소드 등에 내가 붙이는 이름
 '대소문자 구분해서 영문으로 만든다'
 
 ### 키워드
+
 = 예약어
 이미 프로그램에서 쓰기로 한 말들
 
 ### 변수 기본 타입
+
 - boolean : 1비트 (논리)
 - char : 2바이트 (문자)
 - byte : 1바이트 (8비트, -128 ~ 127, 정수)
@@ -102,4 +105,32 @@ public class test1 {
 
 (2비트 = 00 01 10 11 4가지 기분)
 
+### 자동 import
 
+Ctrl + Shift + o
+
+# Scanner 클래스
+
+```java
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int test01;
+		// 1. Scanner 준비
+		Scanner sc = new Scanner(System.in); // sc : 식별자
+		System.out.println("> ");
+		test01 = sc.nextInt(); // 대입 (정수 읽기)
+
+		System.out.println(test01);
+	}
+
+}
+```
+
+```
+> 10
+10
+```
