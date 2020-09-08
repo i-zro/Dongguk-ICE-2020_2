@@ -15,7 +15,7 @@
 ### cmd 창에서 python 빠져나오기
 `ctrl+z`
 
-## numpy
+# numpy
 다차원 배열 데이터를 효과적으로 처리해 줌
 -- --
 ```python
@@ -57,7 +57,7 @@ c.shape
 ```
 (3, 3)
 ```
-- 숫자가 2개 = c가 3개의 row와 3개의 column을 가진 2차원 배열이라는 뜻
+- `숫자가 2개` = c가 3개의 row와 3개의 column을 가진 2차원 배열이라는 뜻
 
 ### 다차원 배열에 숫자 채우기
 ```python
@@ -92,6 +92,7 @@ array([[0.11, 0.11, 0.11, 0.11],
 
 ## 간격 정해서 배열 만들기
 - arange(시작점, 종료점, 간격)
+- 간격을 적지 않으면 기본적으로 1씩 증가
 ```python
 np.arange(10, 30) # 종료점 = 종료점 - 1 
 ```
@@ -135,4 +136,64 @@ array([[0.10684162, 0.28064948, 0.55768774],
        [0.46908127, 0.19500359, 0.26814137]])
 ```
 출력
+
+#### dim
+차원 수
+
+#### size
+배열 원소의 총 개수
+
+#### itemsize
+바이트 값 반환
+
+### reshape(row, col)
+배열의 차원의 크기 변경
+
+### 배열 거꾸로 뒤집기
+[::-1]
+
+## array와 다르게 ndarray는 배열 요소 한꺼번에 변경 가능
+```python
+a = np.array([1, 2, 5, 7, 8])
+a[1:3] = -1
+a
+```
+```
+array([ 1, -1, -1,  7,  8])
+```
+
+## 리스트 복사
+```python
+a = np.array([1, 2, 5, 7, 8])
+a_slice = a[1:5].copy() #원래 값이 같이 안바뀌어지도록 copy 사용하기!
+```
+
+## boolean indexing
+```python
+a = np.arange(12).reshape(3, 4)
+rows_on = np.array([True, False, True])
+a[rows_on, 1]  #a[행, 열] 
+```
+```
+array([1, 9])
+```
+
+## 연립 방정식 풀기
+```
+2x + 6y = 6
+5x + 3y = -9
+```
+```python
+coeffs  = np.array([[2, 6], [5, 3]]) # 계수
+depvars = np.array([6, -9]) # 상수항
+solution = np.linalg.solve(coeffs, depvars)
+solution
+```
+```
+array([-3.,  2.])
+```
+
+# pandas
+
+
 
