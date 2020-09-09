@@ -264,7 +264,7 @@ people
 ```
        weight	birthyear	children	hobby
 alice	   68	    1985	NaN	       Biking
-bob	       83	    1984	3.0	       Dancing
+bob	   83	    1984	3.0	       Dancing
 charles	   112	    1992	0.0	       NaN
 ```
 
@@ -277,7 +277,7 @@ people[people["birthyear"] < 1990]
 ```
 	       weight	birthyear	children	hobby
 alice	       68	1985	       NaN	    Biking
-bob	           83	1984	       3.0	    Dancing
+bob	       83	1984	       3.0	    Dancing
 ```
 
 # matplotlib
