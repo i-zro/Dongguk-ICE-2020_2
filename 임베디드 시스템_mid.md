@@ -225,3 +225,28 @@ sudo minicom
   ![](2020-09-03-10-35-04.png)
 - sudo apt-get update
 - sudo apt-get install ctags
+
+# 비디오 렉처노트 2
+
+![LectureNote2_200910_112245_1](https://user-images.githubusercontent.com/48379869/92678497-0e914480-f361-11ea-9da9-b882ff4927ed.jpg)
+![LectureNote2_200910_112245_2](https://user-images.githubusercontent.com/48379869/92678500-0f29db00-f361-11ea-9231-b62461be9fac.jpg)
+![LectureNote2_200910_112245_3](https://user-images.githubusercontent.com/48379869/92678505-105b0800-f361-11ea-9f0f-85507b7b7179.jpg)
+![LectureNote2_200910_112245_4](https://user-images.githubusercontent.com/48379869/92678513-1355f880-f361-11ea-9cf4-76ca556302ed.jpg)
+![LectureNote2_200910_112245_5](https://user-images.githubusercontent.com/48379869/92678437-f4576680-f360-11ea-80fe-085829246ead.jpg)
+![LectureNote2_200910_112245_6](https://user-images.githubusercontent.com/48379869/92678441-f6b9c080-f360-11ea-9037-4b216999a4f6.jpg)
+![LectureNote2_200910_112245_7](https://user-images.githubusercontent.com/48379869/92678446-f91c1a80-f360-11ea-904c-39ecf1a8ef7e.jpg)
+![LectureNote2_200910_112245_8](https://user-images.githubusercontent.com/48379869/92678449-f9b4b100-f360-11ea-9159-6b4b30b58e72.jpg)
+![LectureNote2_200910_112245_9](https://user-images.githubusercontent.com/48379869/92678450-fae5de00-f360-11ea-9286-8a700cdf0681.jpg)
+![LectureNote2_200910_112245_10](https://user-images.githubusercontent.com/48379869/92678452-fc170b00-f360-11ea-9546-5e3d97cbdde1.jpg)
+![LectureNote2_200910_112245_11](https://user-images.githubusercontent.com/48379869/92678454-fd483800-f360-11ea-8a0b-fbf7400af653.jpg)
+![LectureNote2_200910_112245_12](https://user-images.githubusercontent.com/48379869/92678456-fde0ce80-f360-11ea-926f-02b767c01371.jpg)
+![LectureNote2_200910_112245_13](https://user-images.githubusercontent.com/48379869/92678457-ff11fb80-f360-11ea-98ca-f2811591a450.jpg)
+![LectureNote2_200910_112245_14](https://user-images.githubusercontent.com/48379869/92678460-ffaa9200-f360-11ea-8c35-74f9b00739bb.jpg)
+![LectureNote2_200910_112245_15](https://user-images.githubusercontent.com/48379869/92678462-00dbbf00-f361-11ea-9bc7-9bc09c58e55c.jpg)
+![LectureNote2_200910_112245_16](https://user-images.githubusercontent.com/48379869/92678464-020cec00-f361-11ea-8b22-174374cfdb0c.jpg)
+![LectureNote2_200910_112245_17](https://user-images.githubusercontent.com/48379869/92678471-0507dc80-f361-11ea-80d3-26c46c15a7b8.jpg)
+![LectureNote2_200910_112245_18](https://user-images.githubusercontent.com/48379869/92678475-06390980-f361-11ea-9d62-4e49e85c5374.jpg)
+![LectureNote2_200910_112245_19](https://user-images.githubusercontent.com/48379869/92678480-076a3680-f361-11ea-8d49-9c79665c5ada.jpg)
+![LectureNote2_200910_112245_20](https://user-images.githubusercontent.com/48379869/92678487-0933fa00-f361-11ea-93d3-da170c4a24aa.jpg)
+![LectureNote2_200910_112245_21](https://user-images.githubusercontent.com/48379869/92678491-0c2eea80-f361-11ea-99ed-e65be9948245.jpg)
+![LectureNote2_200910_112245_22](https://user-images.githubusercontent.com/48379869/92678495-0d601780-f361-11ea-924a-9c181a43b3a7.jpg)
