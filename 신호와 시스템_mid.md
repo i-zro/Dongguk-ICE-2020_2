@@ -32,6 +32,10 @@
 ![Notes_200909_115109_4](https://user-images.githubusercontent.com/48379869/92592541-b0218300-f2da-11ea-8001-c8c87402fad8.jpg)
 ![신시200909_200909_204916_5](https://user-images.githubusercontent.com/48379869/92595101-ca5d6000-f2de-11ea-92bb-ee067ce25c5d.jpg)
 
+## 이산시간의 시간은 정수만
+
+= 1.5, 2.5 이런것은 제외!
+
 # 과제 1
 
 [HW1\_수학연습.pdf](https://github.com/i-zro/Dongguk-ICE-2020_2/files/5210700/HW1_.pdf)
