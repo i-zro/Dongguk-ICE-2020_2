@@ -392,31 +392,30 @@ q
 
 # 20-09-14
 
-## 숙제 : 실습을 한 다음에 다음 주 실습 시간까지 자신의 dataset을 한 번 만들어본다. 노트북에 만들어서 제출.
-
-## Univariate Regression
-
-한 변수에 대한 예상
-
-ex) 11번가에서 ~에 파는 물건이 쿠팡에서 얼마에 파는가?
-
-![](2020-09-14-15-19-32.png)
-
 # Linear Regression
 
-- 파라미터와 노이즈
+## 1. Univariate Regression
 
-![](2020-09-14-15-20-32.png)
+input(x)와 output(y) 사이의 관계를 직선으로 모델링
+
+ex) 11번가에서 9달러에 파는 물건이 쿠팡에서 얼마에 파는가?
+
+![2020-09-14-15-19-32](https://user-images.githubusercontent.com/48379869/93083050-ee4ce700-f6cc-11ea-8297-8e9a93d89587.png)
+
+- 파라미터와 노이즈
+  ![2020-09-14-15-20-32](https://user-images.githubusercontent.com/48379869/93083122-18060e00-f6cd-11ea-8e49-468462f91ebd.png)
 
 - 선이 예측 값, 점이 실제 값
   ![2020-09-14-15-22-39](https://user-images.githubusercontent.com/48379869/93051291-32c18e00-f69f-11ea-9b85-6b3232001964.png)
 
-- 선과 점 사이의 거리 = error
+- 선과 점 사이의 거리 = error = 최소화해야
   ![2020-09-14-15-22-13](https://user-images.githubusercontent.com/48379869/93051471-7fa56480-f69f-11ea-9cea-1ab04ebe2989.png)
 
 그래서 least squares를 쓰는 것
 
-- 그럼 어떻게 최솟값을 구하지? = 수학적으로 : 미분
+- 그럼 어떻게 최솟값을 구하지?
+
+### 1) 수학적으로 : 미분
 
 ![](2020-09-14-15-26-06.png)
 
@@ -426,38 +425,58 @@ ex) 11번가에서 ~에 파는 물건이 쿠팡에서 얼마에 파는가?
 
 ![image](https://user-images.githubusercontent.com/48379869/93051861-1a9e3e80-f6a0-11ea-8fdb-3afea1960422.png)
 
-## Linear Regression : Optimization with Gradient Descent
+## 2) Gradient Descent
 
-- online processing : 1 at a time
-- batch processing : all at once
+- 알고리즘
+  ![image](https://user-images.githubusercontent.com/48379869/93083772-0ffa9e00-f6ce-11ea-9f57-70db2758de9f.png)
 
 ### Convex
 
 볼록성이 한 개인 경우 (극소나 극댓값이 하나)
 ![image](https://user-images.githubusercontent.com/48379869/93052451-21798100-f6a1-11ea-864c-b604fc26f365.png)
 
+- gradient descent로 최소점 찾기
+  ![image](https://user-images.githubusercontent.com/48379869/93084172-9e6f1f80-f6ce-11ea-84ee-8bdecfed0853.png)
+
+- online processing : 1 at a time
+- batch processing : all at once
+- mini-batch processing : subset at a time
+
 ## Stcochastic Gradient Descent (SGD)
 
-![image](https://user-images.githubusercontent.com/48379869/93052991-1b37d480-f6a2-11ea-8dfc-531b5fc21fa6.png)
+- 전체 데이터 (Batch)가 아닌 일부 데이터의 모음(Mini-Batch)를 사용
+- Local Minima에 빠지지 않고 Global Minima에 수렴할 가능성이 더 높음
 
-### 두 번 미분했더니 일직선
+## 2. Multivariate Regression
 
-= convex
-
-## Multivariate Regression
+2 input variables
 
 ex) 11번가와 Gmarket으로 쿠팡 값 예측
 
 ![image](https://user-images.githubusercontent.com/48379869/93053460-c9dc1500-f6a2-11ea-8524-c1d6a63b6019.png)
 
-## Model Evaluation : Loss Function
+### Linear 아닐 때 Regression 함수 예시
+
+![image](https://user-images.githubusercontent.com/48379869/93085841-2b1add00-f6d1-11ea-99b1-ae6f4dcc6279.png)
+
+# Model Evaluation : Loss Function
 
 ![image](https://user-images.githubusercontent.com/48379869/93054071-c1380e80-f6a3-11ea-9b59-e8d7fd2d7e79.png)
 
-## Bias and Variance
+## Error 분석 : Bias and Variance
+
+- Bias : 예측한 값의 평균(E(y-hat))과 실제값(y)의 차이로, 모델이 맞추지 못하는 부분
+- Variance : 모델을 통해 예측한 값(y-hat)이 예측값의 평균(E(y-hat))을 중심으로 얼마나 퍼져있는지
+  ![image](https://user-images.githubusercontent.com/48379869/93086096-8d73dd80-f6d1-11ea-8ef2-ba98dfbcb931.png)
+
+![image](https://user-images.githubusercontent.com/48379869/93086342-f78c8280-f6d1-11ea-9d4e-b2195fe4c032.png)
 
 ![image](https://user-images.githubusercontent.com/48379869/93054670-a4e8a180-f6a4-11ea-8ce0-cb236e156338.png)
 
 ## Regularization
 
+![image](https://user-images.githubusercontent.com/48379869/93087846-17bd4100-f6d4-11ea-9864-006b3f3a745a.png)
+
 ![image](https://user-images.githubusercontent.com/48379869/93055082-5687d280-f6a5-11ea-8573-7b55d8085426.png)
+
+![image](https://user-images.githubusercontent.com/48379869/93087988-4cc99380-f6d4-11ea-9047-00e926b359dc.png)
