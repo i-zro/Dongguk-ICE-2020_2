@@ -53,3 +53,17 @@
 ![신시과제1_200912_022356_11](https://user-images.githubusercontent.com/48379869/92955423-0be93900-f4a0-11ea-8fe1-56cbbed90988.jpg)
 ![신시과제1_200912_022356_12](https://user-images.githubusercontent.com/48379869/92955426-0c81cf80-f4a0-11ea-806a-8162b69f3867.jpg)
 ![신시과제1_200912_022356_13](https://user-images.githubusercontent.com/48379869/92955427-0d1a6600-f4a0-11ea-8156-3634d25fd3e5.jpg)
+
+# 20-09-14
+
+## 과제 1 교수님 풀이
+
+[HW1\_수학연습.pdf](https://github.com/i-zro/Dongguk-ICE-2020_2/files/5210700/HW1_.pdf)
+
+#### 1-6번 문제
+
+#### 2번 문제 조지 가모프
+
+#### 4번 문제
+
+####

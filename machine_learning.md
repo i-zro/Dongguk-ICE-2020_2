@@ -289,18 +289,20 @@ import matplotlib.pyplot as plt
 # 20-09-09 (3)
 
 ### Random Variable
+
 확률에 의해 정해지는 결괏값들
 ex) 주사위 던지기
+
 - discrete : 죽냐/사냐
 - continuous : 혈압
 
 ### Variance/standard deviation
+
 ![2020-09-09-15-19-04](https://user-images.githubusercontent.com/48379869/92569722-eb608980-f2bb-11ea-94dc-737f21812471.png)
 ![2020-09-09-15-21-12](https://user-images.githubusercontent.com/48379869/92569700-e7346c00-f2bb-11ea-831a-70786d048b14.png)
 
-
-
 ## Gaussian
+
 = 정규분포 (종모양)
 
 ![2020-09-09-15-29-16](https://user-images.githubusercontent.com/48379869/92569708-e8fe2f80-f2bb-11ea-91bf-2d9c2026ac2c.png)
@@ -308,69 +310,154 @@ ex) 주사위 던지기
 ex) 동전 던질 때 앞면 나오는 경우
 
 ### Covariance
+
 두 변수의 선형 관계
 ![2020-09-09-15-35-45](https://user-images.githubusercontent.com/48379869/92569710-e996c600-f2bb-11ea-80c7-981e77276d75.png)
 ![2020-09-09-15-36-30](https://user-images.githubusercontent.com/48379869/92569711-e996c600-f2bb-11ea-87ef-378d43379ecc.png)
+
 - 양일 때 한 개가 증가하면 다른 변수도 같이 증가하는 경우
 
 #### 시그모이드
+
 로지스틱, 뉴럴넷에서 사용
 
 ## Vector Norms
+
 ![2020-09-09-15-55-15](https://user-images.githubusercontent.com/48379869/92569712-ea2f5c80-f2bb-11ea-9d22-92c483bb4505.png)
 
 ex) (0,0) ~ (5,5)
+
 - l1 : 직선 (1차원) (10 거리)
 - l2 : 대각선 (2차원) (5 루트 2 거리)
 
 ### Transpose
+
 =Symmetric
 
 ![2020-09-09-15-59-29](https://user-images.githubusercontent.com/48379869/92570860-5d859e00-f2bd-11ea-96f0-d151c886ea68.png)
 
 ### Rank
+
 선형적으로 독립적인 행이나 열의 수 (패턴이 없는 것)
 
 #### Full Rank
+
 모두 독립적
 
 ## Eigen Value
-쪼개지지 않는 기본단위 
+
+쪼개지지 않는 기본단위
 
 ![2020-09-09-16-01-55](https://user-images.githubusercontent.com/48379869/92569718-eac7f300-f2bb-11ea-8b9c-d5cd86a23819.png)
 
 ## 정보 이론
+
 - `잘 일어나지 않는 사건`이 자주 발생하는 사건보다 `정보량이 많다`라고 함
 - 독립사건은 추가적인 정보량을 가짐
 
 ## 샤넌의 Entropy
+
 1. 확률변수 X의 값이 x인 사건의 정보량
-: I(x) = -logP(x)
+   : I(x) = -logP(x)
 
 ex) 동전을 던져 앞면이 나오는 사건 : -log2(0.5)=1
 
 ex) 주사위를 던져 눈이 1이 나오는 사건 : -log2(1/6) = 2.5849
 
 2. Shannon's Entropy
-: 모든 사건 정보량의 기대값
-H(P) = E[I(x)]
+   : 모든 사건 정보량의 기대값
+   H(P) = E[I(x)]
 
 ex) 앞면, 뒷면 나올 확률이 동일한 동전
 ![2020-09-09-16-09-47](https://user-images.githubusercontent.com/48379869/92569720-eb608980-f2bb-11ea-986a-75f2d4eae04c.png)
 
-
 ## Cross Entropy
+
 ![](2020-09-09-17-44-10.png)
-실제 분포 
+실제 분포
 q
-에 대하여 알지 못하는 상태에서, 모델링을 통하여 구한 분포인 
+에 대하여 알지 못하는 상태에서, 모델링을 통하여 구한 분포인
 p
-를 통하여 
+를 통하여
 q
 를 예측하는 것
+
 - 실제 값과 예측 값의 차이를 줄이기 위한 엔트로피
 - 머신러닝 결과를 평가할 때 (에러가 얼마나 많은지)
 
 ## KL Divergence
+
 - 두 확률분포의 차이를 계산
 - 크로스 엔트로피 - P의 정보량
+
+# 20-09-14
+
+## 숙제 : 실습을 한 다음에 다음 주 실습 시간까지 자신의 dataset을 한 번 만들어본다. 노트북에 만들어서 제출.
+
+## Univariate Regression
+
+한 변수에 대한 예상
+
+ex) 11번가에서 ~에 파는 물건이 쿠팡에서 얼마에 파는가?
+
+![](2020-09-14-15-19-32.png)
+
+# Linear Regression
+
+- 파라미터와 노이즈
+
+![](2020-09-14-15-20-32.png)
+
+- 선이 예측 값, 점이 실제 값
+  ![2020-09-14-15-22-39](https://user-images.githubusercontent.com/48379869/93051291-32c18e00-f69f-11ea-9b85-6b3232001964.png)
+
+- 선과 점 사이의 거리 = error
+  ![2020-09-14-15-22-13](https://user-images.githubusercontent.com/48379869/93051471-7fa56480-f69f-11ea-9cea-1ab04ebe2989.png)
+
+그래서 least squares를 쓰는 것
+
+- 그럼 어떻게 최솟값을 구하지? = 수학적으로 : 미분
+
+![](2020-09-14-15-26-06.png)
+
+![image](https://user-images.githubusercontent.com/48379869/93051062-d9f1f580-f69e-11ea-9857-aff5a8800fe7.png)
+
+- 매트릭스에서 Linear Regression
+
+![image](https://user-images.githubusercontent.com/48379869/93051861-1a9e3e80-f6a0-11ea-8fdb-3afea1960422.png)
+
+## Linear Regression : Optimization with Gradient Descent
+
+- online processing : 1 at a time
+- batch processing : all at once
+
+### Convex
+
+볼록성이 한 개인 경우 (극소나 극댓값이 하나)
+![image](https://user-images.githubusercontent.com/48379869/93052451-21798100-f6a1-11ea-864c-b604fc26f365.png)
+
+## Stcochastic Gradient Descent (SGD)
+
+![image](https://user-images.githubusercontent.com/48379869/93052991-1b37d480-f6a2-11ea-8dfc-531b5fc21fa6.png)
+
+### 두 번 미분했더니 일직선
+
+= convex
+
+## Multivariate Regression
+
+ex) 11번가와 Gmarket으로 쿠팡 값 예측
+
+![image](https://user-images.githubusercontent.com/48379869/93053460-c9dc1500-f6a2-11ea-8524-c1d6a63b6019.png)
+
+## Model Evaluation : Loss Function
+
+![image](https://user-images.githubusercontent.com/48379869/93054071-c1380e80-f6a3-11ea-9b59-e8d7fd2d7e79.png)
+
+## Bias and Variance
+
+![image](https://user-images.githubusercontent.com/48379869/93054670-a4e8a180-f6a4-11ea-8ce0-cb236e156338.png)
+
+## Regularization
+
+![image](https://user-images.githubusercontent.com/48379869/93055082-5687d280-f6a5-11ea-8573-7b55d8085426.png)
